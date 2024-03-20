@@ -3,5 +3,3 @@ import "./header.js"
 import "./slider.js"
 import "./observer.js"
 import "./socials.js"
-
-
