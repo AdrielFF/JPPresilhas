@@ -1,0 +1,36 @@
+body {
+  font-family: "Jost", sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .btn {
+  font-family: "Krona One", sans-serif !important;
+  margin: 0;
+}
+
+p {
+  font-weight: 1.5rem;
+}
+
+h1 {
+  line-height: 4.75rem;
+  font-size: 4rem;
+}
+
+body, a {
+  color: #1A1A1A !important;
+}
+
+.primary-button-color {
+  color: #F99417;
+}
+
+img {
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
