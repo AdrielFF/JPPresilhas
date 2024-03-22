@@ -1,5 +1,3 @@
-import $ from "./../../../node_modules/jquery/dist/jquery.slim.js"
-
 document.addEventListener( 'DOMContentLoaded', function () { 
   if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.querySelector(".header").classList.add("scrolled")

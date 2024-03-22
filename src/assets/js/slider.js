@@ -1,5 +1,3 @@
-import  Splide from "./../../../node_modules/@splidejs/splide/dist/js/splide.js"
-
 document.addEventListener( 'DOMContentLoaded', function () {
   const main = new Splide( '#main-carousel', {
     type      : 'fade',

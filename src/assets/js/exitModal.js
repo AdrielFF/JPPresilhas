@@ -1,5 +1,3 @@
-import $ from "./../../../node_modules/jquery/dist/jquery.slim.js"
-
 const scrollDiv = document.createElement("div");
 
 scrollDiv.className = "scrollbar-measure";
