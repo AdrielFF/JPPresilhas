@@ -21,16 +21,19 @@
           <div class="collapse navbar-collapse justify-content-center" id="responsive-navbar">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto align-items-center">
               <li class="nav-item">
-                <a class="nav-link active fs-5 me-4 p-0 p-0 " aria-current="Sobre" href="#about">Sobre</a>
+                <a class="nav-link home-link fs-5 me-4 p-0 p-0 " href="#home">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 me-4 p-0" aria-current="Perguntas" href="#works">Nossos Serviços</a>
+                <a class="nav-link about-link fs-5 me-4 p-0 p-0 " href="#about">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 me-4 p-0" aria-current="page" href="#faq">Perguntas Frequentes</a>
+                <a class="nav-link works-link fs-5 me-4 p-0" href="#works">Nossos Serviços</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 p-0" aria-current="page" href="#contact">Contato</a>
+                <a class="nav-link faq-link fs-5 me-4 p-0" href="#faq">Perguntas Frequentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link contact-link fs-5 p-0" href="#contact">Contato</a>
               </li>
             </ul>
           </div>
@@ -39,7 +42,7 @@
     </div>
   </header>
   
-  <section class="hero">
+  <section class="hero observer-section" id="home">
     <div class="container">
       <div class="hero__main-content">
         <div class="hero__content-text blur animate__animated animate__fadeInLeft">
@@ -57,7 +60,7 @@
       <a class="scroll-down" href="#about"><span></span><span></span><span></a>
     </div>
   </section>
-  <section class="about" id="about">
+  <section class="about observer-section" id="about">
     <div class="container section">
       <h2 class="title primary animate__animated">Nossa Presilha</h2>
       <img class="about__img animate__animated" src="./assets/images/about-preview.png" />
@@ -80,7 +83,7 @@
       <a href="#" class="btn secondary big">Especificações Técnicas</a>
     </div>
   </section>
-  <section class="carousel" id="works">
+  <section class="carousel observer-section" id="works">
     <div class="container section">
       <h2 class="title primary mb-5 animate__animated">Veja nossos trabalhos</h2>
       <div class="carousel-wrapper">
@@ -143,7 +146,7 @@
       </div>
     </div>
   </section>
-  <section class="faq" id="faq">
+  <section class="faq observer-section" id="faq">
     <div class="container section">
       <h2 class="title primary mb-5 animate__animated">Perguntas Frequentes</h2>
       <div class="accordion accordion-flush" id="accordionFAQ">
@@ -200,7 +203,7 @@
       </div>
     </div>
   </section>
-  <section class="contact" id="contact">
+  <section class="contact observer-section" id="contact">
     <div class="container section">
       <h2 class="title secondary mb-5 animate__animated">Contato</h2>
       <div class="contact__card animate__animated">
@@ -255,6 +258,44 @@
   <footer>
 
   </footer>
+  <div id="modalTrigger" data-bs-toggle="modal" data-bs-target="#exitPreventModal" data-trigger="hover">
+  </div>
+  
+  <div class="modal fade" id="exitPreventModal" data-bs-backdrop="static"> 
+    <div class="modal-dialog modal-dialog-centered"> 
+      <div class="modal-content rounded-0"> 
+        <div class="modal-header text-center border-0 pb-0 pt-5"> 
+          <h3 class="modal-title w-100"> 
+              Antes de ir!
+          </h3> 
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> 
+        <div class="modal-body pb-5 px-4 pt-1 "> 
+            <p>Nos deixe uma mensagem, ficaremos felizes em entrar em contato para tirar suas dúvidas.</p>
+            <div class="contact__card__contact__socials">
+              <div class="button">
+                <div class="icon-wrapper whatsapp">
+                  <img src="./assets/images/wp-icon.svg" />
+                </div>
+                <span>WhatsApp</span>
+              </div>
+              <div class="button">
+                <div class="icon-wrapper instagram">
+                  <img src="./assets/images/insta-icon.svg" />
+                </div>
+                <span>Instagram</span>
+              </div>
+              <div class="button">
+                <div class="icon-wrapper email">
+                  <img src="./assets/images/email-icon.svg" />
+                </div>
+                <span>Email</span>
+              </div>
+            </div>
+        </div> 
+      </div> 
+    </div> 
+  </div> 
   <script src="assets/js/app.js" type="module"></script>
 </body>
 

@@ -2,7 +2,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
   const animatedEl = document.querySelectorAll(".animate__animated")
 
-  const observer = new IntersectionObserver(
+  let observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
         if (entry.target.classList.contains("title")) {
