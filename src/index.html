@@ -9,10 +9,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Display:wght@100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header blur">
+  <header class="header">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light main-navbar h-100">
         <div class="container-fluid">
@@ -21,7 +25,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="responsive-navbar">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto align-items-center">
+            <ul class="navbar-nav mb-lg-0 ms-auto align-items-center">
               <li class="nav-item">
                 <a class="nav-link home-link fs-5 me-4 p-0 p-0 " href="#home">Início</a>
               </li>
@@ -47,12 +51,20 @@
   <section class="hero observer-section" id="home">
     <div class="container">
       <div class="hero__main-content">
-        <div class="hero__content-text blur animate__animated animate__fadeInLeft">
+        <div class="hero__content-text animate__animated animate__fadeInLeft">
           <div>
             <h1 class="animate__animated">Deixe seu deck incrivel!</h1>
-            <p class="animate__animated">Nossas presilhas darão um charme a mais ao seu deck.</p>
+            <div class="hero__content-text__paragrap-wrapper">
+              <p class="animate__animated mt-3">
+                Nossas presilhas darão um charme a mais ao seu deck, 
+                compre-as agora ou entre em contato e tiraremos todas suas dúvidas.
+              </p>
+            </div>
           </div>
-          <a class="btn primary big animate__animated" href="#">Saiba mais</a>
+          <div class="hero__content__btn-wrapper">
+            <a class="btn primary big animate__animated" href="#">Compre já!</a>
+            <a class="btn secondary big animate__animated" href="#about">Saiba mais</a>
+          </div>
         </div>
         <div class="hero__content-images animate__animated animate__fadeInLeft">
           <img class="hero__content-images" src="./assets/images/hero-image.png"/>

@@ -367,17 +367,13 @@ body {
 }
 
 h1, h2, h3, .btn {
-  font-family: "Krona One", sans-serif !important;
+  font-family: "Inter Tight", sans-serif !important;
   margin: 0;
 }
 
-p {
-  font-weight: 1.5rem;
-}
-
 h1 {
-  line-height: 4.75rem;
-  font-size: 4rem;
+  line-height: 0.85;
+  font-size: 5rem;
 }
 
 body, a {
@@ -515,13 +511,14 @@ img {
 
 .header {
   width: 100%;
-  position: absolute;
-  top: 48px;
-  height: 100px;
+  position: fixed;
+  top: 0;
+  height: 70px;
   z-index: 2;
   display: flex;
   justify-content: space-between;
-  transition: background-color 0.3s, height 0.3s;
+  background: #f4f4f4;
+  transition: height 0.3s, box-shadow 0.3s;
 }
 .header .logo {
   width: 120px;
@@ -531,7 +528,7 @@ img {
 }
 .header .nav-link {
   position: relative;
-  font-size: 1.25rem !important;
+  font-size: 1.125rem !important;
   transition: font-size 0.3s;
 }
 .header .nav-link::before {
@@ -549,10 +546,8 @@ img {
   transform: scaleX(1);
 }
 .header.scrolled {
-  position: fixed;
-  top: 0;
-  background-color: #fafafa;
   height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .header.scrolled .logo {
   width: 100px;
@@ -594,10 +589,21 @@ img {
 .hero__content-text .btn {
   align-self: flex-start;
 }
-@Media (max-width: 664px) {
+.hero__content-text__paragrap-wrapper {
+  width: 100%;
+  max-width: 408px;
+}
+@media (max-width: 664px) {
   .hero__content-text {
     height: auto;
   }
+}
+.hero__content__btn-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.hero__content__btn-wrapper .btn {
+  height: 100%;
 }
 .hero__content-images {
   position: relative;
@@ -621,6 +627,17 @@ img {
   .hero__content-images {
     display: none;
   }
+}
+.hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 64%;
+  height: 153%;
+  background-color: #f4f4f4;
+  transform: rotate(-18deg) translateY(-50%);
 }
 
 .about {
@@ -1036,8 +1053,8 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-left: 1px solid #1A1A1A;
+  border-bottom: 1px solid #1A1A1A;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb07 2s infinite;
