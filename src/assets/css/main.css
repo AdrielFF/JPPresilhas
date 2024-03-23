@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Krona+One&display=swap";
 .splide__track--nav > .splide__list > .splide__slide {
   border: 3px solid transparent;
   cursor: pointer;
@@ -857,7 +856,7 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
 }
 
 .contact {
-  background-image: url("../images/contact-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/contact-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -882,8 +881,8 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
   transform: translate(-50%, -50%);
 }
 .contact__card h4 {
-  font-size: 0.875rem;
-  font-family: "Krona One", sans-serif;
+  font-size: 1rem;
+  font-family: "Inter Tight", sans-serif !important;
 }
 .contact__card__opening-hours {
   width: 275px;
@@ -1004,6 +1003,9 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
 .contact__card__contact .number {
   font-weight: bold;
   font-size: 1.125rem;
+}
+.contact__card__contact span {
+  font-family: "Inter Tight", sans-serif !important;
 }
 @media (max-width: 664px) {
   .contact__card {
