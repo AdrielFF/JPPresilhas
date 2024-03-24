@@ -1,23 +1,36 @@
 document.addEventListener( 'DOMContentLoaded', function () {
-  const main = new Splide( '#main-carousel', {
+  const mainCarousel = new Splide( '#main-carousel', {
     type      : 'fade',
     rewind    : true,
     pagination: false,
     arrows    : false,
     autoplay: true,
     speed: 1000,
+    drag: false,
+    breakpoints: {
+      664: {
+        drag: true,
+      }
+    },
   } )
 
-  const thumbnails = new Splide( '#thumbnail-carousel', {
+  const thumbnailsCarousel = new Splide( '#thumbnail-carousel', {
     type: 'loop',
     perPage: 5,
 		gap: 8,
 		rewind: true,
 		pagination: false,
     isNavigation: true,
+    drag: false,
+    breakpoints: {
+      664: {
+        drag: true,
+        perPage: 4
+      }
+    },
   } )
 
-  main.sync( thumbnails )
-  main.mount()
-  thumbnails.mount()
+  mainCarousel.sync( thumbnailsCarousel )
+  mainCarousel.mount()
+  thumbnailsCarousel.mount()
 } );
