@@ -509,7 +509,7 @@ img {
 }
 @media (max-width: 664px) {
   .container.section {
-    padding: 5.625rem 1rem;
+    padding: 3rem 1rem;
   }
 }
 
@@ -624,7 +624,6 @@ img {
   padding: 3.75rem 2.125rem;
   width: 100%;
   max-width: 624px;
-  margin-top: 2.5rem;
   height: 424px;
   animation-delay: 0.1s;
 }
@@ -708,6 +707,7 @@ img {
     background-position: left;
     background-size: cover;
     background-color: #000;
+    padding-top: 7rem;
   }
 }
 
