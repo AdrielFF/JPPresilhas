@@ -408,6 +408,11 @@ img {
   color: #324365;
   text-align: center;
 }
+@media (max-width: 664px) {
+  .title.primary {
+    margin-bottom: 1rem !important;
+  }
+}
 .title.secondary {
   color: #fafafa;
   text-align: center;
@@ -501,6 +506,11 @@ img {
 }
 .container.section {
   padding: 5.625rem 0;
+}
+@media (max-width: 664px) {
+  .container.section {
+    padding: 5.625rem 1rem;
+  }
 }
 
 .blur {
@@ -635,7 +645,7 @@ img {
 }
 @media (max-width: 664px) {
   .hero__content-text .text-wrapper::before {
-    width: 150%;
+    width: 176%;
     transform: rotate(-22deg) translateY(-50%);
   }
 }
@@ -867,15 +877,10 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
 }
 @media (max-width: 664px) {
   section.carousel .carousel-wrapper .thumbnail-wrapper {
-    height: 60px;
-    bottom: -65px;
+    position: unset;
     background: #fafafa;
-    padding: 0 1rem;
-  }
-}
-@media (max-width: 664px) {
-  section.carousel {
-    padding: 5.625rem 1rem;
+    padding: 0.5rem 1rem;
+    height: auto;
   }
 }
 
@@ -930,7 +935,7 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
 }
 @media (max-width: 664px) {
   .faq {
-    padding: 5.625rem 1rem;
+    padding: 0 1rem;
   }
 }
 
@@ -945,7 +950,7 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
   width: 100%;
   max-width: 652px;
   margin: 0 auto;
-  padding: 2.5rem 1.75rem;
+  padding: 0 1.75rem;
   color: #FAFAFA;
   display: flex;
   justify-content: space-between;
@@ -996,6 +1001,7 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
 @media (max-width: 664px) {
   .contact__card__opening-hours__item {
     margin: 0 auto;
+    margin-left: 3rem;
   }
 }
 .contact__card__contact {
@@ -1080,6 +1086,11 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
 .contact__card__contact span {
   font-family: "Inter Tight", sans-serif !important;
 }
+@media (max-width: 644px) {
+  .contact__card__contact {
+    gap: 1rem;
+  }
+}
 @media (max-width: 664px) {
   .contact__card {
     flex-direction: column;
@@ -1088,8 +1099,13 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
     max-width: 320px;
   }
   .contact__card::after {
-    transform: translate(-50%, -16%);
-    content: url("../images/contact-card-divider-horizontal.svg");
+    transform: translate(-50%, -80%);
+    content: "";
+    width: 188px;
+    height: 40px;
+    background-image: url("../images/contact-card-divider-horizontal.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
