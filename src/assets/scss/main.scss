@@ -135,21 +135,28 @@
     height: 120px;
     margin-bottom: -80px;
     transition: width .3s, height .3s;
+    z-index: 1;
 
     @media (max-width: 664px) {
       width: 70px;
       height: 70px;
-      margin: 0 auto;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+  }
+
+  & .navbar-nav {
+    @media (max-width: 664px) {
+      height: 280px;
+      justify-content: end;
+      padding: 1.5rem 0;
     }
   }
 
   & .nav-item {
     @media (max-width: 664px) {
-      width: 100%;
-
-      &:first-of-type {
-        margin-top: 1rem;
-      }
+      width: 50%;
     }
 
     & .nav-link {
@@ -201,7 +208,7 @@
 
   @media (max-width: 664px) {
     height: auto;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: transparent;
   }
 }
 
@@ -231,11 +238,39 @@
       max-width: 624px;
       margin-top: 2.5rem;
       height: 424px;
-      overflow: hidden;
       animation-delay: .1s;
+
+      & .text-wrapper {
+        overflow: visible;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 157%;
+          height: 448%;
+          background-color: #f4f4f4;
+          transform: rotate(-31deg) translateY(-50%);
+          z-index: -1;
+      
+          @media (max-width: 664px) {
+            width: 150%;
+            transform: rotate(-22deg) translateY(-50%);
+          }
+        }
+      }
+
+      & h1 {
+        color: #fafafa;
+        mix-blend-mode: difference;
+      }
   
       & p {
+        color: #fafafa;
         margin-bottom: 3rem;
+        mix-blend-mode: difference;
       }
   
       & .btn {
@@ -249,6 +284,7 @@
 
       @media (max-width: 664px) {
         height: auto;
+        color: #fafafa;
       }
     }
 
@@ -289,16 +325,18 @@
     }
   }
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 64%;
-    height: 153%;
-    background-color: #f4f4f4;
-    transform: rotate(-18deg) translateY(-50%);
+  @media (max-width: 664px) {
+    background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ),
+  url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+
+  background-color: #000;
   }
 }
 
@@ -973,10 +1011,26 @@ footer {
   }
 }
 
+.navbar.navbar-expand-lg {
+  background: #f4f4f4;
+
+  @media (max-width: 664px) {
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+}
+
 .navbar-toggler {
   @media (max-width: 664px) {
     position: absolute;
-    right: 5px;
+    right: 15px;
     top: 22px;
+    z-index: 1;
+    border: none;
+
+    &-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 }

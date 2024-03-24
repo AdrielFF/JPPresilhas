@@ -72,5 +72,4 @@ document.addEventListener( 'DOMContentLoaded', function () {
   sections.forEach(el =>  {
     observer.observe(el)
   })
-
 })
