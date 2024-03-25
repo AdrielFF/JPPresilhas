@@ -244,7 +244,6 @@
       padding: 3.75rem 2.125rem;
       width: 100%;
       max-width: 624px;
-      height: 424px;
       animation-delay: .1s;
 
       & .text-wrapper {
@@ -256,7 +255,7 @@
           position: absolute;
           left: 0;
           top: 50%;
-          width: 157%;
+          width: 190%;
           height: 448%;
           background-color: #f4f4f4;
           transform: rotate(-31deg) translateY(-50%);
@@ -307,7 +306,8 @@
 
   &__content-images {
     position: relative;
-    width: 556px;
+    max-width: 556px;
+    width: 100%;
 
     & img {
       position: absolute;

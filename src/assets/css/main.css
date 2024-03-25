@@ -370,9 +370,20 @@ h1, h2, h3, .btn {
   margin: 0;
 }
 
+@media (max-width: 664px) {
+  h2 {
+    font-size: 2rem !important;
+  }
+}
+
 h1 {
   line-height: 0.85;
-  font-size: 5rem;
+  font-size: 4rem;
+}
+@media (max-width: 664px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 body, a {
@@ -624,7 +635,6 @@ img {
   padding: 3.75rem 2.125rem;
   width: 100%;
   max-width: 624px;
-  height: 424px;
   animation-delay: 0.1s;
 }
 .hero__content-text .text-wrapper {
@@ -636,7 +646,7 @@ img {
   position: absolute;
   left: 0;
   top: 50%;
-  width: 157%;
+  width: 190%;
   height: 448%;
   background-color: #f4f4f4;
   transform: rotate(-31deg) translateY(-50%);
@@ -679,7 +689,8 @@ img {
 }
 .hero__content-images {
   position: relative;
-  width: 556px;
+  max-width: 556px;
+  width: 100%;
 }
 .hero__content-images img {
   position: absolute;
