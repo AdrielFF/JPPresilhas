@@ -737,7 +737,7 @@ img {
 .about .title {
   text-align: center;
 }
-.about img {
+.about .main-image {
   display: block;
   margin: 0 auto;
   max-width: 387px;
@@ -746,15 +746,22 @@ img {
 .about__float-cards {
   position: absolute;
   background-color: #fff;
-  width: 234px;
-  padding: 1.375rem 1.625rem;
+  width: 260px;
+  padding: 1rem;
   font-size: 0.875rem;
   line-height: 1rem;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   min-height: 80px;
+}
+.about__float-cards .measures-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.about__float-cards.left {
+  width: 300px;
 }
 .about__float-cards.left::after {
   position: absolute;
@@ -779,37 +786,31 @@ img {
 }
 .about__float-cards:nth-of-type(1) {
   top: 25%;
-  left: 64px;
+  left: 0;
 }
 .about__float-cards:nth-of-type(1)::after {
   content: url("../images/arrow1.svg");
 }
 .about__float-cards:nth-of-type(2) {
-  top: 45%;
-  left: 26px;
+  top: 64%;
+  left: 0;
 }
 .about__float-cards:nth-of-type(2)::after {
-  content: url("../images/arrow2.svg");
-}
-.about__float-cards:nth-of-type(3) {
-  top: 64%;
-  left: 60px;
-}
-.about__float-cards:nth-of-type(3)::after {
   content: url("../images/arrow3.svg");
 }
-.about__float-cards:nth-of-type(4) {
+.about__float-cards:nth-of-type(3) {
   top: 26%;
-  right: 22px;
+  right: 0;
 }
-.about__float-cards:nth-of-type(4)::before {
+.about__float-cards:nth-of-type(3)::before {
   content: url("../images/arrow4.svg");
 }
-.about__float-cards:nth-of-type(5) {
+.about__float-cards:nth-of-type(4) {
   top: 60%;
-  right: 40px;
+  right: 0;
+  width: 284px;
 }
-.about__float-cards:nth-of-type(5)::before {
+.about__float-cards:nth-of-type(4)::before {
   content: url("../images/arrow5.svg");
 }
 @media (max-width: 664px) {
@@ -817,10 +818,13 @@ img {
     position: initial;
     margin-bottom: 0.5rem;
     margin: 1rem auto 0 1rem;
-    width: 66%;
+    width: 80% !important;
   }
   .about__float-cards:nth-of-type(odd) {
-    margin: 1rem 1rem 0 auto;
+    margin: 1rem 0 0 auto;
+  }
+  .about__float-cards:nth-of-type(even) {
+    margin: 1rem auto 0 0;
   }
   .about__float-cards:first-of-type {
     margin-top: 1rem;
