@@ -13,9 +13,11 @@ document.addEventListener( 'DOMContentLoaded', function () {
         }
         if (entry.target.classList.contains("left")) {
           entry.target.classList.toggle("animate__slideInLeft", entry.isIntersecting)
+          entry.target.classList.toggle("show-arrow", entry.isIntersecting)
         }
         if (entry.target.classList.contains("right")) {
           entry.target.classList.toggle("animate__slideInRight", entry.isIntersecting)
+          entry.target.classList.toggle("show-arrow", entry.isIntersecting)
         }
         if (entry.target.classList.contains("main-carousel")) {
           entry.target.classList.toggle("animate__slideInLeft", entry.isIntersecting)

@@ -18,7 +18,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
     } else {
       aboutCards.forEach(function(el, index) {
         const cardNumber = index + 1
-        console.log(cardNumber === 1 || cardNumber === 2)
         if(cardNumber === 1 || cardNumber === 2) {
           $(el).removeClass("right")
           if(!el.classList.contains("left")) {
