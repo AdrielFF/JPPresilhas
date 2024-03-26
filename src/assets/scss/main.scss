@@ -1050,9 +1050,13 @@ section.carousel {
 }
 
 footer {
-  background-color: #324365;
-  height: 80px;
+  background-color: #333845;
+  height: 60px;
   width: 100%;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #modalTrigger {
