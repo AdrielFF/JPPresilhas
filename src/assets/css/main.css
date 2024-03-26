@@ -836,6 +836,11 @@ img {
 .about__float-cards .arrow-wrapper.fourth {
   top: -50%;
 }
+@media (max-width: 664px) {
+  .about__float-cards .arrow-wrapper {
+    display: none;
+  }
+}
 .about__float-cards.show-arrow .arrow-wrapper.first::before, .about__float-cards.show-arrow .arrow-wrapper.second::before {
   left: 100%;
   right: 0;

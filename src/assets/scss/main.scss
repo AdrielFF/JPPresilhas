@@ -473,6 +473,10 @@
       &.fourth {
         top: -50%;
       }
+
+      @media (max-width: 664px) {
+        display: none;
+      }
     }
 
     &.show-arrow {
