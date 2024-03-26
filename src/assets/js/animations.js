@@ -26,7 +26,17 @@ document.addEventListener( 'DOMContentLoaded', function () {
           entry.target.classList.toggle("animate__fadeIn", entry.isIntersecting)
         }
         if (entry.target.classList.contains("secondary-carousel__image")) {
-          entry.target.classList.toggle("animate__slideInLeft", entry.isIntersecting)
+          entry.target.classList.toggle("animate__slideInLeft",  entry.isIntersecting)
+          if(entry.isIntersecting) {
+            console.log(entry.isIntersecting)
+            setTimeout(function() {
+              document.querySelectorAll('.secondary-carousel__image').forEach(function(el) {
+                $(el).removeClass("animate__animated")
+              })
+              $('#thumbnail-carousel ').css('pointer-events', 'all')
+              $('.thumbnail-wrapper ').css('cursor', 'initial')
+            }, 2000)
+          }
         }
         if (entry.target.classList.contains("contact__card")) {
           entry.target.classList.toggle("animate__zoomIn", entry.isIntersecting)
