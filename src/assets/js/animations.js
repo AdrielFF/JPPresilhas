@@ -1,3 +1,5 @@
+import { clipCarousel } from './slider.js'
+
 document.addEventListener( 'DOMContentLoaded', function () { 
 
   const animatedEl = document.querySelectorAll(".animate__animated")
@@ -8,8 +10,11 @@ document.addEventListener( 'DOMContentLoaded', function () {
         if (entry.target.classList.contains("title")) {
           entry.target.classList.toggle("animate__fadeInDown", entry.isIntersecting)
         }
-        if (entry.target.classList.contains("about__img")) {
+        if (entry.target.classList.contains("about-carousel")) {
           entry.target.classList.toggle("animate__zoomIn", entry.isIntersecting)
+          if(entry.isIntersecting) { 
+            clipCarousel.mount()
+          }
         }
         if (entry.target.classList.contains("left")) {
           entry.target.classList.toggle("animate__slideInLeft", entry.isIntersecting)
@@ -28,7 +33,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
         if (entry.target.classList.contains("secondary-carousel__image")) {
           entry.target.classList.toggle("animate__slideInLeft",  entry.isIntersecting)
           if(entry.isIntersecting) {
-            console.log(entry.isIntersecting)
             setTimeout(function() {
               document.querySelectorAll('.secondary-carousel__image').forEach(function(el) {
                 $(el).removeClass("animate__animated")

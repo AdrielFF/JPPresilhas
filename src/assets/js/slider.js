@@ -1,4 +1,17 @@
+let clipCarousel
+
 document.addEventListener( 'DOMContentLoaded', function () {
+
+  clipCarousel = new Splide( '#clip-carousel', {
+    type      : 'fade',
+    rewind    : true,
+    pagination: true,
+    arrows    : false,
+    autoplay: true,
+    speed: 1000,
+    interval: 3000
+  } )
+
   const mainCarousel = new Splide( '#main-carousel', {
     type      : 'fade',
     rewind    : true,
@@ -34,3 +47,5 @@ document.addEventListener( 'DOMContentLoaded', function () {
   mainCarousel.mount()
   thumbnailsCarousel.mount()
 } );
+
+export { clipCarousel }

@@ -4,14 +4,14 @@ document.addEventListener( 'DOMContentLoaded', function () {
     if ($(window).width() <= 664) {
       aboutCards.forEach(function(el, index) {
         if(index % 2 === 0) {
-          $(el).removeClass("left")
-          if(!el.classList.contains("right")) {
-            $(el).addClass("right")
-          }
-        } else {
           $(el).removeClass("right")
           if(!el.classList.contains("left")) {
             $(el).addClass("left")
+          }
+        } else {
+          $(el).removeClass("left")
+          if(!el.classList.contains("right")) {
+            $(el).addClass("right")
           }
         }
       })
