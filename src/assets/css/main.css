@@ -835,13 +835,15 @@ img {
 }
 .about__float-cards:nth-of-type(3) {
   top: 75%;
-  left: -88%;
-  width: 238px;
+  left: -108%;
+  max-width: 332px;
+  width: 100%;
 }
 .about__float-cards:nth-of-type(4) {
   top: 2%;
   right: -104%;
-  width: 284px;
+  max-width: 284px;
+  width: 100%;
 }
 .about__float-cards .arrow-wrapper {
   position: absolute;
@@ -973,7 +975,6 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
 
 .faq {
   background-color: #F4F4F4;
-  height: 774px;
   overflow: hidden;
 }
 .faq .accordion {
@@ -1007,6 +1008,9 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
   margin-bottom: 0.875rem;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   border: none;
+}
+.faq .accordion-item:last-of-type {
+  margin-bottom: 0;
 }
 .faq .accordion-item h3 {
   font-family: "Jost", sans-serif !important;
