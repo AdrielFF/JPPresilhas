@@ -740,6 +740,16 @@ img {
     background-color: #000;
     padding-top: 7rem;
   }
+  .hero .container {
+    display: flex;
+    align-items: center;
+  }
+  .hero::before {
+    display: none;
+  }
+  .hero h1, .hero p {
+    color: #f4f4f4;
+  }
 }
 
 .about {
@@ -1201,6 +1211,7 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
     content: "";
     width: 188px;
     height: 40px;
+    top: 46.5%;
     background-image: url("../images/contact-card-divider-horizontal.svg");
     background-repeat: no-repeat;
     background-position: center;

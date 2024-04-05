@@ -348,17 +348,30 @@
 
   @media (max-width: 664px) {
     background:
-  linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.7)
-  ),
-  url("../images/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
 
-  background-color: #000;
-  padding-top: 7rem;
+    background-color: #000;
+    padding-top: 7rem;
+
+    & .container {
+      display: flex;
+      align-items: center;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    & h1, p {
+      color: #f4f4f4;
+    }
   }
 }
 
@@ -903,6 +916,7 @@ section.carousel {
         content: "";
         width: 188px;
         height: 40px;
+        top: 46.5%;
         background-image: url("../images/contact-card-divider-horizontal.svg");
         background-repeat: no-repeat;
         background-position: center;
