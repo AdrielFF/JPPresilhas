@@ -728,7 +728,7 @@ img {
 }
 @media (max-width: 664px) {
   .hero__content-images {
-    display: none;
+    position: relative;
   }
 }
 @media (max-width: 664px) {
@@ -1261,6 +1261,13 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
   animation: sdb07 2s infinite;
   opacity: 0;
   box-sizing: border-box;
+}
+@media (max-width: 664px) {
+  .hero .scroll-down span {
+    border-color: transparent;
+    transform: translate(0);
+    width: 100vw;
+  }
 }
 
 .hero .scroll-down span:nth-of-type(1) {
