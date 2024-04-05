@@ -1,3 +1,10 @@
+@import "./../../../node_modules/animate.css/source/_vars.css";
+@import "./../../../node_modules/animate.css/source/_base.css";
+@import "./../../../node_modules/animate.css/source/fading_entrances/fadeInLeft.css";
+@import "./../../../node_modules/animate.css/source/fading_entrances/fadeIn.css";
+@import "./../../../node_modules/animate.css/source/sliding_entrances/slideInLeft.css";
+@import "./../../../node_modules/animate.css/source/sliding_entrances/slideInRight.css";
+@import "./../../../node_modules/animate.css/source/zooming_entrances/zoomIn.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -8991,6 +8998,7 @@ img {
   width: 100%;
   margin: 0 auto;
   background-color: #f4f4f4;
+  z-index: 1;
 }
 .about .container #clip-carousel::after {
   content: "";
