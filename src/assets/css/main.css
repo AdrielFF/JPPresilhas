@@ -729,6 +729,7 @@ img {
 @media (max-width: 664px) {
   .hero__content-images {
     position: relative;
+    width: 100vw;
   }
 }
 @media (max-width: 664px) {
@@ -742,7 +743,7 @@ img {
   }
   .hero .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   .hero::before {
     display: none;
@@ -1264,9 +1265,7 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
 }
 @media (max-width: 664px) {
   .hero .scroll-down span {
-    border-color: transparent;
-    transform: translate(0);
-    width: 100vw;
+    display: none;
   }
 }
 

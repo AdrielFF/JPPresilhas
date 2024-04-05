@@ -343,6 +343,7 @@
     
     @media (max-width: 664px) {
       position: relative;
+      width: 100vw;
     }
   }
 
@@ -362,7 +363,7 @@
 
     & .container {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
     }
 
     &::before {
@@ -975,9 +976,7 @@ section.carousel {
   box-sizing: border-box;
 
   @media (max-width: 664px) {
-    border-color: transparent;
-    transform: translate(0);
-    width: 100vw;
+    display: none;
   }
 }
 .hero .scroll-down span:nth-of-type(1) {
