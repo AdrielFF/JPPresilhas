@@ -23,14 +23,7 @@
   <meta property="twitter:image" content="/assets/images/og-thumb.jpg">
   <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
   <link rel="stylesheet" href="./assets/css/main.css" />
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
-  <noscript>
-    <link rel="stylesheet" href="(font CSS URL here)">
-  </noscript>
-  
+
   <link fetchpriority="high" rel="preload" href="./assets/images/hero-bg.jpg" as="image">
   <link fetchpriority="high" rel="preload" href="./assets/images/hero-image1.png" as="image">
   <link fetchpriority="high" rel="preload" href="./assets/images/hero-image.png" as="image">
@@ -104,7 +97,7 @@
           </div>
         </div>
       </div>
-      <a class="scroll-down" href="#about"><span></span><span></span><span></a>
+      <a class="scroll-down" href="#about" aria-label="Avance para a seção: sobre a presilha"><span></span><span></span><span></a>
     </div>
   </section>
   <section class="about observer-section" id="about">
@@ -180,22 +173,22 @@
         >
           <div class="splide__track">
             <ul class="splide__list">
-              <li class="splide__slide">
+              <li class="splide__slide" role="group">
                 <img src="./assets/images/carousel-1.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
               </li>
-              <li class="splide__slide">
+              <li class="splide__slide" role="group">
                 <img src="./assets/images/carousel-2.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
               </li>
-              <li class="splide__slide">
+              <li class="splide__slide" role="group">
                 <img src="./assets/images/carousel-4.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
               </li>
-              <li class="splide__slide">
+              <li class="splide__slide" role="group">
                 <img src="./assets/images/carousel-5.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
               </li>
-              <li class="splide__slide">
+              <li class="splide__slide" role="group">
                 <img src="./assets/images/carousel-6.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
               </li>
-              <li class="splide__slide">
+              <li class="splide__slide" role="group">
                 <img src="./assets/images/carousel-7.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
               </li>
             </ul>
@@ -208,22 +201,22 @@
           >
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide secondary-carousel__image animated">
+                <li class="splide__slide secondary-carousel__image animated" role="button">
                   <img src="./assets/images/carousel-1.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
                 </li>
-                <li class="splide__slide secondary-carousel__image animated">
+                <li class="splide__slide secondary-carousel__image animated" role="button">
                   <img src="./assets/images/carousel-2.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
                 </li>
-                <li class="splide__slide secondary-carousel__image animated">
+                <li class="splide__slide secondary-carousel__image animated" role="button">
                   <img src="./assets/images/carousel-4.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
                 </li>
-                <li class="splide__slide secondary-carousel__image animated">
+                <li class="splide__slide secondary-carousel__image animated" role="button">
                   <img src="./assets/images/carousel-5.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
                 </li>
-                <li class="splide__slide">
+                <li class="splide__slide" role="button">
                   <img src="./assets/images/carousel-6.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
                 </li>
-                <li class="splide__slide">
+                <li class="splide__slide" role="button">
                   <img src="./assets/images/carousel-7.jpg" alt="imagens ilustrativas dos nossos serviços em decks">
                 </li>
               </ul>
@@ -295,7 +288,7 @@
       <h2 class="title secondary mb-5 animated">Contato</h2>
       <div class="contact__card animated">
         <div class="contact__card__opening-hours">
-          <h4 class="contact__card__title mb-3">Horário de funcionamento</h4>
+          <h3 class="contact__card__title mb-3">Horário de funcionamento</h3>
           <div class="contact__card__opening-hours__item">
             <span class="contact__card__opening-hours__item__days" >Segunda a Sexta</span>
             <span class="contact__card__opening-hours__item__hours">8:00h - 18:00h</span>
@@ -306,7 +299,7 @@
           </div>
         </div>
         <div class="contact__card__contact">
-          <h4 class="contact__card__title mb-3">Nos made uma mensagem</h4>
+          <h3 class="contact__card__title mb-3">Nos made uma mensagem</h3>
           <div class="contact__card__contact__socials">
             <a href="https://wa.me/19994863607" target="_blank">
               <div class="button">

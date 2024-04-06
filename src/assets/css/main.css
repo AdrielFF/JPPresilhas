@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Inter Tight;
+  src: url("../../fonts/InterTight-VariableFont_wght.woff2") format("woff2");
+}
+@font-face {
+  font-family: Jost;
+  src: url("../../fonts/Jost-VariableFont_wght.woff2") format("woff2");
+}
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -9361,7 +9369,7 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
   align-items: center;
 }
 .faq .accordion-button:not(.collapsed) {
-  color: #fff;
+  color: #404040;
   background-color: #F99417;
   box-shadow: none;
 }
@@ -9431,7 +9439,7 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.contact__card h4 {
+.contact__card h3 {
   font-size: 1rem;
   font-family: "Inter Tight", sans-serif !important;
 }

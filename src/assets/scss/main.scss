@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Inter Tight;
+  src: url("../../fonts/InterTight-VariableFont_wght.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: Jost;
+  src: url("../../fonts/Jost-VariableFont_wght.woff2") format('woff2');
+}
+
 @import "./../../../node_modules/bootstrap/scss/functions";
 @import "./../../../node_modules/bootstrap/scss/variables";
 
@@ -712,7 +722,7 @@ section.carousel {
     align-items: center;
 
     &-button:not(.collapsed) {
-      color: #fff;
+      color: #404040;
       background-color: #F99417;
       box-shadow: none;
 
@@ -799,7 +809,7 @@ section.carousel {
       transform: translate(-50%, -50%);
     }
 
-    & h4 {
+    & h3 {
       font-size: 1rem;
       font-family: "Inter Tight", sans-serif !important;
     }
