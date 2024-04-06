@@ -1,11 +1,11 @@
 @font-face {
   font-family: Inter Tight;
-  src: url("https://srv1308-files.hstgr.io/821c678735d2820b/files/public_html/fonts/InterTight-VariableFont_wght.woff2") format('woff2');
+  src: url("./../../fonts/InterTight-VariableFont_wght.woff2") format('woff2');
 }
 
 @font-face {
   font-family: Jost;
-  src: url("https://srv1308-files.hstgr.io/821c678735d2820b/files/public_html/fonts/Jost-VariableFont_wght.woff2") format('woff2');
+  src: url("../../fonts/Jost-VariableFont_wght.woff2") format('woff2');
 }
 
 @import "./../../../node_modules/bootstrap/scss/functions";
@@ -123,8 +123,8 @@
   }
 
   &.secondary {
-    color: #F99417 !important;
-    border: 2px solid #F99417;
+    color: #a05f0f !important;
+    border: 2px solid #a05f0f;
 
     &:after {
       content: '';
