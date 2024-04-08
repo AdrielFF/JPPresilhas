@@ -1,11 +1,13 @@
 @font-face {
   font-family: Inter Tight;
   src: url("./../../fonts/InterTight-VariableFont_wght.woff2") format('woff2');
+  font-display: swap;
 }
 
 @font-face {
   font-family: Jost;
   src: url("../../fonts/Jost-VariableFont_wght.woff2") format('woff2');
+  font-display: swap;
 }
 
 @import "./../../../node_modules/bootstrap/scss/functions";
