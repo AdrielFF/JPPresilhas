@@ -25,10 +25,17 @@
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link defer rel="stylesheet" href="./assets/css/animations.css" />
 
-  <!-- <link fetchpriority="high" rel="preload" href="./assets/images/hero-bg-mobile.jpg" as="image"> -->
   <link fetchpriority="high" rel="preload" href="./assets/images/hero-bg.jpg" as="image">
-  <link fetchpriority="high" rel="preload" href="./assets/images/hero-image.webp" as="image">
-  <link fetchpriority="high" rel="preload" href="./assets/images/hero-image2.webp" as="image">
+
+  <link fetchpriority="high" rel="preload" href="./assets/images/hero-bg-mobile.jpg" as="image">
+  <link fetchpriority="high" rel="preload" media="screen and (min-device-width: 665px)" href="./assets/images/hero-image.webp" as="image">
+  <link fetchpriority="high" rel="preload" media="screen and (min-device-width: 665px)" href="./assets/images/hero-image2.webp" as="image">
+
+  <link defer media="screen and (max-device-width: 664px)" href="./assets/images/hero-image.webp" as="image"/>
+  <link defer media="screen and (max-device-width: 664px)" href="./assets/images/hero-image2.webp" as="image"/>
+
+
+
   <link fetchpriority="low" href="./assets/images/clip-carousel-1.jpg" as="image">
   <link fetchpriority="low" href="./assets/images/clip-carousel-2.jpg" as="image">
   <link fetchpriority="low" href="./assets/images/clip-carousel-3.jpg" as="image">
