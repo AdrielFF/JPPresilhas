@@ -43,17 +43,6 @@ img {
 	top: -9999px;
 }
 
-.splide__pagination__page {
-  &.is-active {
-    background: #ff8d00;
-    transform: none;
-  }
-
-  &:hover {
-    background: #f1c083;
-  }
-}
-
 @media (max-width: 768px) {
   html {
     font-size: 87.5%;

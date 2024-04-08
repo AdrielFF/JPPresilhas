@@ -1,0 +1,72 @@
+@import "./../../../node_modules/animate.css/source/_vars";
+@import "./../../../node_modules/animate.css/source/_base";
+
+@import "./../../../node_modules/animate.css/source/fading_entrances/fadeInLeft";
+@import "./../../../node_modules/animate.css/source/fading_entrances/fadeIn";
+@import "./../../../node_modules/animate.css/source/sliding_entrances/slideInLeft";
+@import "./../../../node_modules/animate.css/source/sliding_entrances/slideInRight";
+@import "./../../../node_modules/animate.css/source/zooming_entrances/zoomIn";
+
+@import "splide-skyblue.min.scss";
+
+.splide__pagination__page {
+  &.is-active {
+    background: #ff8d00 !important;
+    transform: none;
+  }
+
+  &:hover {
+    background: #f1c083;
+  }
+}
+
+.splide__slide{
+  &.is-active {
+    border: 0 !important;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;    
+  }
+}
+
+#thumbnail-carousel{
+
+  & .splide__list {
+
+    & #thumbnail-carousel-slide01 {
+      animation-delay: .9s;
+    }
+    & #thumbnail-carousel-slide02 {
+      animation-delay: .8s;
+    }
+    & #thumbnail-carousel-slide03 {
+      animation-delay: .7s;
+    }
+    & #thumbnail-carousel-slide04 {
+      animation-delay: .6s;
+    }
+    & #thumbnail-carousel-slide05 {
+      animation-delay: .5s;
+    }
+  }
+} 
+
+.splide__arrow {
+  & svg {
+    fill: #fafafae6 !important;
+  }
+
+  &--prev {
+    left: -54px;
+  }
+
+  &--next {
+    right: -54px;
+  }
+
+  @media (max-width: 664px) {
+    display: none;
+  }
+}

@@ -9,7 +9,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
     arrows    : false,
     autoplay: true,
     speed: 1000,
-    interval: 3000
+    interval: 3000,
+    lazyLoad: "nearby",
   } )
 
   const mainCarousel = new Splide( '#main-carousel', {
@@ -20,6 +21,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
     autoplay: true,
     speed: 1000,
     drag: false,
+    lazyLoad: "nearby",
     breakpoints: {
       664: {
         drag: true,
@@ -35,6 +37,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 		pagination: false,
     isNavigation: true,
     drag: false,
+    lazyLoad: "nearby",
     breakpoints: {
       664: {
         drag: true,

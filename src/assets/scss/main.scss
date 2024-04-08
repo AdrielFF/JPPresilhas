@@ -45,17 +45,6 @@
 @import "./../../../node_modules/bootstrap/scss/close";
 
 @import "./../../../node_modules/bootstrap/scss/utilities/api";
-
-@import "./../../../node_modules/animate.css/source/_vars";
-@import "./../../../node_modules/animate.css/source/_base";
-
-@import "./../../../node_modules/animate.css/source/fading_entrances/fadeInLeft";
-@import "./../../../node_modules/animate.css/source/fading_entrances/fadeIn";
-@import "./../../../node_modules/animate.css/source/sliding_entrances/slideInLeft";
-@import "./../../../node_modules/animate.css/source/sliding_entrances/slideInRight";
-@import "./../../../node_modules/animate.css/source/zooming_entrances/zoomIn";
-
-@import "splide-skyblue.min.scss";
 @import "./reset.scss";
 
 .title {
@@ -669,29 +658,6 @@ section.carousel {
       }
     }
 
-    & #thumbnail-carousel{
-
-      & .splide__list {
-
-        & #thumbnail-carousel-slide01 {
-          animation-delay: .9s;
-        }
-        & #thumbnail-carousel-slide02 {
-          animation-delay: .8s;
-        }
-        & #thumbnail-carousel-slide03 {
-          animation-delay: .7s;
-        }
-        & #thumbnail-carousel-slide04 {
-          animation-delay: .6s;
-        }
-        & #thumbnail-carousel-slide05 {
-          animation-delay: .5s;
-        }
-      }
-
-    } 
-
     & .thumbnail-wrapper {
       position: absolute;
       bottom: 0;
@@ -993,35 +959,6 @@ section.carousel {
         background-position: center;
       }
     }
-  }
-}
-
-.splide__arrow {
-  & svg {
-    fill: #fafafae6 !important;
-  }
-
-  &--prev {
-    left: -54px;
-  }
-
-  &--next {
-    right: -54px;
-  }
-
-  @media (max-width: 664px) {
-    display: none;
-  }
-}
-
-.splide__slide{
-  &.is-active {
-    border: 0 !important;
-  }
-
-  & img {
-    width: 100%;
-    height: auto;    
   }
 }
 
