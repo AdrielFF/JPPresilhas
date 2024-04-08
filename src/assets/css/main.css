@@ -8589,7 +8589,6 @@ img {
 }
 @media (max-width: 664px) {
   .hero__content-images {
-    display: none;
     position: absolute;
     bottom: 0;
     left: 0;

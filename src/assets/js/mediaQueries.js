@@ -16,16 +16,16 @@ document.addEventListener( 'DOMContentLoaded', function () {
         }
       })
 
-      // document.querySelectorAll(".hero__content-images").forEach(function(el) {
-      //   let parent = el.parentNode
-      //   let wrapper = document.createElement("a")
-      //   wrapper.href = "https://deppresilhas.com.br/#about"
-      //   parent.replaceChild(wrapper, el)
-      //   wrapper.appendChild(el)
+      document.querySelectorAll(".hero__content-images").forEach(function(el) {
+        let parent = el.parentNode
+        let wrapper = document.createElement("a")
+        wrapper.href = "https://deppresilhas.com.br/#about"
+        parent.replaceChild(wrapper, el)
+        wrapper.appendChild(el)
 
-      //   el.classList.add("animated")
-      //   el.classList.add("fadeInLeft")
-      // })
+        el.classList.add("animated")
+        el.classList.add("fadeInLeft")
+      })
     } else {
       aboutCards.forEach(function(el, index) {
         const cardNumber = index + 1
