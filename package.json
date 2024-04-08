@@ -12,7 +12,7 @@
     "build": "npm run minify-html && npm run optimize-css && npm run bundle && npm run transpile-js && npm run minify-js",
     "sass-start": "npx sass --watch ./src/assets/scss/main.scss ./src/assets/css/main.css",
     "sass-build": "npx sass ./src/assets/scss/main.scss ./src/assets/css/main.css && npx sass ./src/assets/scss/animations.scss ./src/assets/css/animations.css",
-    "purgecss": "purgecss --css ./src/assets/css/main.css --content ./dist/index.html -o ./dist/assets/css/main.css -s show-arrow collapsing open"
+    "purgecss": "purgecss --css ./src/assets/css/main.css --content ./dist/index.html -o ./dist/assets/css/main.css -s show-arrow collapsing open modal-dialog modal-dialog-centered modal fade show modal-backdrop"
   },
   "type": "commonjs",
   "keywords": [],
