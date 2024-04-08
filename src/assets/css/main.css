@@ -9100,7 +9100,7 @@ img {
 }
 @media (max-width: 664px) {
   .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero-bg.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero-bg-mobile.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
