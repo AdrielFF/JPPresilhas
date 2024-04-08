@@ -22,6 +22,9 @@ document.addEventListener( 'DOMContentLoaded', function () {
         wrapper.href = "https://deppresilhas.com.br/#about"
         parent.replaceChild(wrapper, el)
         wrapper.appendChild(el)
+
+        el.classList.add("animated")
+        el.classList.add("fadeInLeft")
       })
     } else {
       aboutCards.forEach(function(el, index) {
