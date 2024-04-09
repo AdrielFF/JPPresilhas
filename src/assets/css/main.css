@@ -8302,7 +8302,9 @@ img {
   position: relative;
   border-radius: 0;
   border: 0;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   padding: 1rem 1.25rem;
   transition: all 0.3s;
@@ -8589,17 +8591,6 @@ img {
 }
 @media (max-width: 664px) {
   .hero__content-images {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 140px;
-    background-image: url("./../images/hero-images-mobile.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top left;
-  }
-  .hero__content-images__first-image-wrapper, .hero__content-images__second-image-wrapper {
     display: none;
   }
 }
@@ -9103,7 +9094,8 @@ section.carousel .carousel-wrapper .thumbnail-wrapper #thumbnail-carousel {
 }
 @media (max-width: 664px) {
   .hero .scroll-down span {
-    display: none;
+    border-left: 1px solid #fafafa;
+    border-bottom: 1px solid #fafafa;
   }
 }
 
