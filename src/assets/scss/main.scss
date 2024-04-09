@@ -638,8 +638,6 @@
 }
 
 section.carousel {
-  background-image: url("../images/bg-texture.png");
-  background-color:rgba(0, 0, 0, 0.5);
   background-repeat: repeat;
   background-color: #b2b2b21a;
   overflow: hidden;
@@ -654,8 +652,12 @@ section.carousel {
       width: 100%;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 4px;
 
-      @media (max-width: 664px) {
+      & > .splide__track  {
 
+        @media (min-width: 665px) {
+          height: 511px;
+          overflow: hidden;
+        }
       }
     }
 

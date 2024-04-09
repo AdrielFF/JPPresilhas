@@ -8803,8 +8803,6 @@ img {
 }
 
 section.carousel {
-  background-image: url("../images/bg-texture.png");
-  background-color: rgba(0, 0, 0, 0.5);
   background-repeat: repeat;
   background-color: rgba(178, 178, 178, 0.1019607843);
   overflow: hidden;
@@ -8818,6 +8816,12 @@ section.carousel .carousel-wrapper {
 section.carousel .carousel-wrapper #main-carousel {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 4px;
+}
+@media (min-width: 665px) {
+  section.carousel .carousel-wrapper #main-carousel > .splide__track {
+    height: 511px;
+    overflow: hidden;
+  }
 }
 section.carousel .carousel-wrapper .thumbnail-wrapper {
   position: absolute;
