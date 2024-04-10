@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "minify-html": "html-minifier-terser src/index.html --collapse-whitespace --output=dist/index.html",
-    "optimize-css": "postcss src/assets/css/main.css --use autoprefixer cssnano postcss-pxtorem --output dist/assets/css/main.css --no-map && postcss src/assets/css/animations.css --use autoprefixer cssnano postcss-pxtorem --output dist/assets/css/animations.css --no-map",
+    "optimize-main-css": "postcss src/assets/css/main.css --use autoprefixer cssnano postcss-pxtorem --output dist/assets/css/main.css --no-map",
+    "optimize-animations-css": "&& postcss src/assets/css/animations.css --use autoprefixer cssnano postcss-pxtorem --output dist/assets/css/animations.css --no-map",
     "bundle": "browserify ./src/assets/js/app.js -o ./dist/assets/js/app.js",
     "transpile-js": "babel dist/assets/js/app.js -o dist/assets/js/app.js --presets=@babel/preset-env",
     "minify-js": "uglifyjs dist/assets/js/app.js --compress -o dist/assets/js/app.js",
-    "build": "npm run minify-html && npm run optimize-css && npm run bundle && npm run transpile-js && npm run minify-js && npm run purgecss",
+    "build": "npm run minify-html && npm run optimize-main-css && npm run optimize-animations-css && npm run bundle && npm run transpile-js && npm run minify-js && npm run purgecss",
     "sass-start": "npx sass --watch ./src/assets/scss/main.scss ./src/assets/css/main.css",
     "sass-build": "npx sass ./src/assets/scss/main.scss ./src/assets/css/main.css && npx sass ./src/assets/scss/animations.scss ./src/assets/css/animations.css",
     "purgecss": "purgecss --css ./src/assets/css/main.css --content ./dist/index.html -o ./dist/assets/css/main.css -s show-arrow collapsing open modal-dialog modal-dialog-centered modal fade show modal-backdrop"
